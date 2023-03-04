@@ -344,6 +344,11 @@ button:active::before {
 /* ---------------------------- */
 /* About                        */
 /* ---------------------------- */
+.container-x {
+    margin-inline: auto;
+    width: min(100% -30px, 1080px);
+}
+
 #about {
     display: grid;
     grid-template-columns:0.5fr repeat(2, 0.25fr);
@@ -352,6 +357,7 @@ button:active::before {
     grid-row-gap: 0px;
     background-color: #ffffff;
     background-image: linear-gradient(121deg, #ffffff 0%, #dfdfdf 29%, #ffffff 68%);
+    padding-bottom: 5rem;
     }
     
 .com { 
@@ -359,10 +365,11 @@ button:active::before {
     padding: 2rem;
     font-size: 3rem;
     font-weight: 600;
-    color: #000;
+    color: #424242;
     text-align: center;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Oswald', sans-serif;
     letter-spacing: 0.6px;
+    line-height: 124px;
 }
 .infor { 
     grid-area: 2 / 1 / 3 / 2; 
@@ -467,6 +474,98 @@ button:active::before {
     margin: auto;    
     text-align: start;
 }
+
+/*-------------------------------------------------------*/
+/* GALLERY                                               */
+/*-------------------------------------------------------*/
+
+  #gallery{
+    padding: 75px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  h3 {
+    position: relative;
+    margin-bottom: 45px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    color: #424242;
+  }
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+  }
+  .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease-in-out;
+  }
+  .item:hover {
+    flex: 7;
+  }
+  .item-1 {
+    background-image: url('../image/1.jpg');
+  }
+  .item-2 {
+    background-image: url('../image/2.jpg');
+  }
+  .item-3 {
+    background-image: url('../image/3.jpg');
+  }
+  .item-4 {
+    background-image: url('../image/4.jpg');
+  }
+  .item-5 {
+    background-image: url('../image/5.jpg');
+  }
+  .item-6 {
+    background-image: url('../image/6.jpg');
+  }
+  .item-7 {
+    background-image: url('../image/7.jpg');
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------------------------------------*/
 /* Footer                                                */

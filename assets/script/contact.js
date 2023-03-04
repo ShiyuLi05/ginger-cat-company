@@ -1,8 +1,4 @@
 'use strict';
-/*
-  JavaScript Basics
-  Yuhan Zhao
-*/
 
 const galleryItem = document.getElementsByClassName("gallery-item");
 const lightBoxContainer = document.createElement("div");

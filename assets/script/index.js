@@ -1,6 +1,5 @@
 'use strict';
 
-
 //Open Menu
 const toggleBtn = document.querySelector('.toggle-btn');
 const toggleBtnIcon = document.querySelector('.toggle-btn i');
