@@ -1,5 +1,7 @@
 @import url("./reset.css");
-
+* {
+  font-family: 'Signika Negative', sans-serif;
+}
 body {
   width: 100%;
   background-color: #cfcbcb;
@@ -49,6 +51,7 @@ nav .toggle-btn {
   display: none;
 }
 .action-btn {
+  text-align: center;
   background-color: #ffa500;
   color: #fff;
   padding: 0.5rem 1rem;
@@ -59,6 +62,7 @@ nav .toggle-btn {
   font-weight: bold;
   cursor: pointer;
   transition: scale 0.2s ease-in-out;
+  width: 120px;
 }
 .action-btn:hover {
   scale: 1.05;
