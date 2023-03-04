@@ -1,8 +1,4 @@
 'use strict';
-/*
-  JavaScript Basics
-  Yuhan Zhao
-*/
 
 const toggleBtn = document.querySelector('.toggle-btn');
 const toggleBtnIcon = document.querySelector('.toggle-btn i');
