@@ -1,4 +1,5 @@
-﻿# Welcome to Ginger-Cat-Company! 
+
+# Welcome to Ginger-Cat-Company! 
 
 ## We are a big company focus on cat photos and videos, please subscribe our membership for more enjoyments! 
 
