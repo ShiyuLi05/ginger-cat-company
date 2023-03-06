@@ -66,17 +66,20 @@ nav .toggle-btn {
 
 .action-btn {
     text-align: center;
-    background-color: #ffa500;
-    color: #fff;
+    background-color: #ffc83d;
+    color: #000;
     padding: 0.5rem 1rem;
     border: none;
     outline: none;
     border-radius: 20px;
     font-size: 0.8rem;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
-    transition: scale 0.2s ease-in-out;
-    width: 120px;
+    width: 145px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 0px 3px #ffc83d;
+    text-transform: uppercase;
 }
 
 .action-btn:hover {
@@ -152,6 +155,7 @@ span {
 .full-img {
     position: relative;
     height: 92.474vh;
+    background-color:rgba(0, 0, 0, 0.35);
 }
 
 .icons a, .down a{
@@ -165,16 +169,18 @@ span {
 }
 
 .hero-banner {
-    background-color:rgba(0, 0, 0, 0.2);
-    height: auto;
-    width: 75%;
+    /*background-color:rgba(0, 0, 0, 0.2);*/
+    height: 40vh;
+    width: 100%;
     position: absolute;
-    top: 18%;
+    top: 50%;
     left: 50%;
-    margin-left: -37.5%;
+    margin-left: -50%;
+    margin-top: -30vh;
     border-radius: 5px;
     border: 0;
     padding:2.4rem;
+    text-align: center;
 }
 
 .hero-banner h2, .hero-banner p, .hero-banner div {
@@ -246,23 +252,24 @@ span {
 }
 
 button {
-    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
-    box-shadow: 0px 0px 0px 3px black;
-    border: 0;
-    border-radius: 0.5rem;
+    padding: 0.5rem 1.8rem 0.5rem 2.5rem;
+    box-shadow: 0px 0px 0px 3px #ffc83d;
+    /*box-shadow: 0px 0px 0px 3px #000;*/
+    border: none;
+    border-radius: 20px;
     font-size: 1rem;
     background-color: #ffc83d;
-    color: black;
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
-    transition: all .9s ease-in-out;
+    transition: all 0.9s ease-in-out;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
 }
 
 button:hover {
-    background-color: #f03a17;
+    background-color: #ffa500;
+    box-shadow: 0px 0px 0px 3px #ffa500;
     color: white;
 }
 
@@ -273,7 +280,7 @@ button::before {
     top: 0rem;
     opacity: 1;
     font-size: 1.55rem;
-    transition: all .9s ease-in-out;
+    transition: all 0.9s ease-in-out;
     transform: rotate(0deg);
 }
 
@@ -284,12 +291,8 @@ button:hover::before {
     transform: rotate(40deg);
     font-size: 2.5rem;
     top: -0.75rem;
-    transition: all .9s ease-in-out;
+    transition: all 0.9s ease-in-out;
     animation: rightRun 2s forwards;
-}
-
-button:active::before {
-    content: "🥰";
 }
 
 @keyframes rightRun {
@@ -355,21 +358,20 @@ button:active::before {
     grid-template-rows: 0.5fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background-color: #ffffff;
-    background-image: linear-gradient(121deg, #ffffff 0%, #dfdfdf 29%, #ffffff 68%);
-    padding-bottom: 5rem;
+    background-color: #e6e6e6;
+    padding: 5rem 0;
     }
     
 .com { 
-    grid-area: 1 / 1 / 2 / 4; 
-    padding: 2rem;
+    grid-area: 1 / 1 / 2 / 2; 
+    padding-bottom: 1.5rem;
+    padding-right: 1rem;
     font-size: 3rem;
     font-weight: 600;
     color: #424242;
     text-align: center;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 0.6px;
-    line-height: 124px;
 }
 .infor { 
     grid-area: 2 / 1 / 3 / 2; 
@@ -377,11 +379,10 @@ button:active::before {
     margin: auto;
     width: 600px;
     height: auto;
-    font-size: 2rem;
-    
+    font-size: 2rem;   
 }
-.xiaogou { grid-area: 2 / 2 / 3 / 3; }
-.nuomi { grid-area: 2 / 3 / 3 / 4; }
+.xiaogou { grid-area: 1 / 2 / 3 / 3; }
+.nuomi { grid-area: 1 / 3 / 3 / 4; }
 
 .flip-card {
     background-color: transparent;
@@ -479,7 +480,7 @@ button:active::before {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 0.25fr 0.75fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
@@ -491,30 +492,32 @@ button:active::before {
 }
 
 @media (max-width: 687px) {
-  
   #about {
     display: grid;
-    place-items: center;
+    /*place-items: center;*/
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 0.25fr 0.5fr 1fr 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    padding: 0 2rem;
   }
   .com { 
-    padding: 0;
+    padding:0;
+    padding-top: 2rem;
     font-size: 2.5rem;
     grid-area: 1 / 1 / 2 / 2; 
-       }
+    }
   .infor { 
     font-size: 1.5rem;
     grid-area: 2 / 1 / 3 / 2; 
-         }
+    }
   .xiaogou { grid-area: 3 / 1 / 4 / 2; }
   .nuomi{ 
     margin-top: 2rem;
     grid-area: 4 / 1 / 5 / 2; 
   }
 }
+
 /*-------------------------------------------------------*/
 /* GALLERY                                               */
 /*-------------------------------------------------------*/
